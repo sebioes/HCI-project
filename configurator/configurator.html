@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlyvelo</title>
+    <link rel="stylesheet" href="configurator-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Configure your OnlyVelo</h1>
+        <form id="configForm">
+            <div class="option-group">
+                <h2>Frame Color</h2>
+                <label><input type="checkbox" name="frame" value="blue"><span class="color-box blue"></span> Blue</label>
+                <label><input type="checkbox" name="frame" value="green"><span class="color-box green"></span> Green</label>
+            </div>
+            <div class="option-group">
+                <h2>Handle Bar Type</h2>
+                <label><input type="checkbox" name="bar" value="riser"> Riser</label>
+                <label><input type="checkbox" name="bar" value="drop"> Drop</label>
+                <label><input type="checkbox" name="bar" value="porteur"> Porteur</label>
+            </div>
+            <div class="option-group">
+                <h2>Saddle Color</h2>
+                <label><input type="checkbox" name="saddle" value="black"><span class="color-box black"></span> Black</label>
+                <label><input type="checkbox" name="saddle" value="brown"><span class="color-box brown"></span> Brown</label>
+
+            </div>
+            <button type="button" onclick="configureBike()">Configure</button>
+        </form>
+    </div>
+    <script src="configurator.js"></script>
+    <div id="arModelDisplay" style="margin-top: 20px;"></div>
+</body>
+</html>

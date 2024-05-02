@@ -1,0 +1,44 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DDDBCB
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.option-group {
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.color-box.black {
+    background-color: #000000;
+}
+
+.color-box.green {
+    background-color: #0b6836;
+}
+
+.color-box.brown {
+    background-color: #5f361b;
+}
+
+.color-box.blue {
+    background-color: #0035c5
+}
+
