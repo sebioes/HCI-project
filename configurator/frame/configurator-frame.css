@@ -1,0 +1,145 @@
+.frame-configuration-screen-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.frame-configuration-screen-frame-configuration-screen {
+  width: 100%;
+  height: 393px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(52, 78, 65, 1);
+}
+.frame-configuration-screen-image1 {
+  top: -25px;
+  left: 0px;
+  width: 852px;
+  height: 447px;
+  position: absolute;
+}
+.frame-configuration-screen-polygon5 {
+  top: 86px;
+  left: 736px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.frame-configuration-screen-frame-color-selection {
+  top: 33px;
+  left: 768px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-configuration-screen-frame-color-selection-r {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+.frame-configuration-screen-saddle-selection {
+  top: 156px;
+  left: 768px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-configuration-screen-saddle-color-selection {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+.frame-configuration-screen-handle-bar-selection {
+  top: 278px;
+  left: 768px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-configuration-screen-handle-bar-selection1 {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+.frame-configuration-screen-polygon6 {
+  top: 2px;
+  left: 733px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.frame-configuration-screen-polygon7 {
+  top: 44px;
+  left: 712px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.frame-configuration-screen-frameiconforward {
+  top: 373px;
+  left: 99px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-configuration-screen-vector {
+  top: -74px;
+  left: -71px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.frame-configuration-screen-frameiconsave {
+  top: 13px;
+  left: 19px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame-configuration-screen-vector1 {
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.frame-configuration-screen-vector2 {
+  top: 44.44443130493164px;
+  left: 17.77777099609375px;
+  width: 44px;
+  height: 36px;
+  position: absolute;
+}
+.frame-configuration-screen-vector3 {
+  top: 0px;
+  left: 17.77776527404785px;
+  width: 36px;
+  height: 22px;
+  position: absolute;
+}
