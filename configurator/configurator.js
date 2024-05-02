@@ -21,6 +21,10 @@ function configureBike() {
             <a rel="ar" href="${modelPath}">
                 <button>View rad velo</button>
             </a>
+            <a href="/test-ride/test-ride.html">
+                <button>Test ride</button>
+            </a>
+            
         `;
         document.getElementById('arModelDisplay').innerHTML = arModelHtml;
     } else {

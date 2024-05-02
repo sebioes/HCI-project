@@ -1,0 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.game{
+    height: 300px;
+    width:600px;
+    border:1px solid blue;
+    overflow: hidden;
+}
+
+#character{
+    background-image: url("files/velo.gif");
+    background-size: cover;
+    height: 80px;
+    width:80px;
+    position:relative;
+    top:220px;
+    left:30px;
+   
+
+}
+.animate{
+    animation :jump 1s 1;
+}
+@keyframes jump{
+    0%{
+        top:220px;
+    }
+    30%{
+        top:180px;
+    }
+    70%{
+        top:180px;
+    }
+    100%{
+        top:220px;
+    }
+}
+#block{
+    background-image: url("files/rocks.png");
+    background-size: cover;
+    height:30px;
+    width:28px;
+    position:relative;
+    left:570px;
+    top:173px;
+    display:none;
+}
+
+.slide{
+    animation:slide 3s infinite;
+}
+
+@keyframes slide{
+    to{
+        left:-60px;
+    }
+    from{
+        left: 600px;
+    }
+}
+
+
+#button-pannel{
+    height: 300px;
+    width:600px;
+    background: black;
+    opacity:0.5;
+    z-index: 100;
+    position:absolute;
+    padding-top:10%;
+    display:block;
+    
+}
+.text{
+  
+    color:chartreuse;
+    cursor: pointer;
+}
+#cloud{
+    position:absolute;
+    background-image:url("files/cloud.jpg");
+    background-size: cover;
+    width:90px;
+    height:50px;
+    top:10px;
+    animation: cloud 25s infinite;
+    overflow: hidden;
+}
+@keyframes cloud{
+    to{
+        left:-80px;
+    }
+    from{
+        left:800px;
+    }
+}
+#road{
+    position:absolute;
+    height: 15px;
+    width: 600px;
+    background-color: green;
+    bottom: 0px;
+}
+.hide{
+    opacity: 0;
+}
