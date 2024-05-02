@@ -11,10 +11,11 @@ document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
 function configureBike() {
     let frame = document.querySelector('input[name="frame"]:checked')?.value;
     let bar = document.querySelector('input[name="bar"]:checked')?.value;
+    let saddle = document.querySelector('input[name="saddle"]:checked')?.value;
 
     // Update the AR model display
-    if (frame && bar) {
-        let modelPath = `/assets/velos/${frame}-${bar}-velo.usdz`;
+    if (frame && bar && saddle) {
+        let modelPath = `/assets/velos/${frame}-${bar}-${saddle}.usdz`;
         let thumbnailPath = `/assets/velos/${frame}-${bar}-thumbnail.jpg`;
         let arModelHtml = `
             <a rel="ar" href="${modelPath}">
