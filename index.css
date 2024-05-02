@@ -1,0 +1,126 @@
+.configuration-screen-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.configuration-screen-configuration-screen {
+  width: 100%;
+  height: 393px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  background-color: rgba(52, 78, 65, 1);
+}
+.configuration-screen-image1 {
+  top: -25px;
+  left: 0px;
+  width: 852px;
+  height: 447px;
+  position: absolute;
+}
+.configuration-screen-frameiconsave {
+  top: 13px;
+  left: 19px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.configuration-screen-vector {
+  top: 0px;
+  left: 0px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.configuration-screen-vector1 {
+  top: 44.44443130493164px;
+  left: 17.77777099609375px;
+  width: 44px;
+  height: 36px;
+  position: absolute;
+}
+.configuration-screen-vector2 {
+  top: 0px;
+  left: 17.77776527404785px;
+  width: 36px;
+  height: 22px;
+  position: absolute;
+}
+.configuration-screen-frame-selection {
+  top: 33px;
+  left: 768px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.configuration-screen-frame-color-selection {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+.configuration-screen-saddle-selection {
+  top: 156px;
+  left: 768px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.configuration-screen-saddle-color-selection {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+.configuration-screen-handle-bar-selection {
+  top: 278px;
+  left: 768px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.configuration-screen-handle-bar-selection1 {
+  top: 0px;
+  left: 0px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+.configuration-screen-frameiconforward {
+  top: 373px;
+  left: 99px;
+  width: 80px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 80px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.configuration-screen-vector3 {
+  left: 0px;
+  width: 80px;
+  bottom: 0px;
+  height: 80px;
+  position: absolute;
+}
