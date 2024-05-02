@@ -16,3 +16,24 @@ body {
 input[type="checkbox"] {
     margin-right: 10px;
 }
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.color-box.black {
+    background-color: #000000;
+}
+
+.color-box.green {
+    background-color: #0b6836;
+}
+
+.color-box.brown {
+    background-color: #5f361b;
+}
+
