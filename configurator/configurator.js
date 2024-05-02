@@ -1,4 +1,4 @@
-// script.js
+// configurator.js
 document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', function() {
         let checkboxes = document.querySelectorAll(`input[name="${this.name}"]`);

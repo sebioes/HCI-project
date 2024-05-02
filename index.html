@@ -1,29 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Bike Configurator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Redirect to Configurator</title>
+    <meta http-equiv="refresh" content="0; URL='configurator/configurator.html'">
 </head>
 <body>
-    <div class="container">
-        <h1>Bike Configurator</h1>
-        <form id="configForm">
-            <div class="option-group">
-                <h2>Frame Color</h2>
-                <label><input type="checkbox" name="frame" value="black"> Black</label>
-                <label><input type="checkbox" name="frame" value="green"> Green</label>
-            </div>
-            <div class="option-group">
-                <h2>Handle Bar Type</h2>
-                <label><input type="checkbox" name="bar" value="riser"> Riser Bar</label>
-                <label><input type="checkbox" name="bar" value="drop"> Drop Bar</label>
-                <label><input type="checkbox" name="bar" value="porteur"> Porteur Bar</label>
-            </div>
-            <button type="button" onclick="configureBike()">Configure</button>
-        </form>
-    </div>
-    <script src="script.js"></script>
+<!-- Optional content for users with browsers that don't support the redirect -->
+<p>If you are not automatically redirected, please click <a href="configurator/configurator.html">here</a>.</p>
 </body>
 </html>
