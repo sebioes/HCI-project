@@ -16,10 +16,10 @@ function configureBike() {
     // Update the AR model display
     if (frame && bar && saddle) {
         let modelPath = `/assets/velos/${frame}-${bar}-${saddle}.usdz`;
-        let thumbnailPath = `/assets/velos/${frame}-${bar}-thumbnail.jpg`;
+        let buttonPath = `/assets/velos/${frame}-${bar}-thumbnail.jpg`;
         let arModelHtml = `
             <a rel="ar" href="${modelPath}">
-                <img src="${thumbnailPath}" alt="AR Model Thumbnail">
+                <button>View rad velo</button>
             </a>
         `;
         document.getElementById('arModelDisplay').innerHTML = arModelHtml;
