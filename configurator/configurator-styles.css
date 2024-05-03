@@ -1,21 +1,44 @@
-/* styles.css */
+/* configurator-styles.css */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #DDDBCB
+    font-family: 'Roboto', sans-serif;
+    background-color: #DAD7CD;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px;
+    background-color: #3A5A40;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #F14303;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #4a4a4a;
 }
 
 .option-group {
     margin-bottom: 20px;
+    padding: 10px;
+    background-color: #A3B18A;
+    border: 1px solid #DAD7CD;
+    border-radius: 4px;
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .color-box {
@@ -24,6 +47,13 @@ input[type="checkbox"] {
     height: 20px;
     margin-right: 5px;
     vertical-align: middle;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
 }
 
 .color-box.black {
@@ -39,6 +69,32 @@ input[type="checkbox"] {
 }
 
 .color-box.blue {
-    background-color: #0035c5
+    background-color: #0035c5;
 }
 
+button {
+    background-color: #A3B18A;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #DAD7CD;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#arModelDisplay {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#arModelDisplay button {
+    margin: 5px;
+}

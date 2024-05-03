@@ -1,10 +1,12 @@
 // configurator.js
-document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
-        let checkboxes = document.querySelectorAll(`input[name="${this.name}"]`);
-        checkboxes.forEach((cb) => {
-            if (cb !== this) cb.checked = false;
-        });
+document.querySelectorAll('.option-group').forEach(group => {
+    group.addEventListener('click', function (event) {
+        if (event.target.type === 'checkbox') {
+            let checkboxes = this.querySelectorAll(`input[name="${event.target.name}"]`);
+            checkboxes.forEach((cb) => {
+                if (cb !== event.target) cb.checked = false;
+            });
+        }
     });
 });
 
@@ -13,21 +15,22 @@ function configureBike() {
     let bar = document.querySelector('input[name="bar"]:checked')?.value;
     let saddle = document.querySelector('input[name="saddle"]:checked')?.value;
 
-    // Update the AR model display
+    let arModelDisplay = document.getElementById('arModelDisplay');
+    arModelDisplay.innerHTML = '<p>Configuring your bike...</p>';
+
     if (frame && bar && saddle) {
         let modelPath = `/assets/velos/${frame}-${bar}-${saddle}.usdz`;
-        let buttonPath = `/assets/velos/${frame}-${bar}-thumbnail.jpg`;
         let arModelHtml = `
-            <a rel="ar" href="${modelPath}">
-                <button>View rad velo</button>
-            </a>
-            <a href="/test-ride/test-ride.html">
-                <button>Test ride</button>
-            </a>
-            
-        `;
-        document.getElementById('arModelDisplay').innerHTML = arModelHtml;
+                <a rel="ar" href="${modelPath}">
+                    <button>View rad velo</button>
+                </a>
+                <a href="/test-ride/test-ride.html">
+                    <button>Test ride</button>
+                </a>
+            `;
+        arModelDisplay.innerHTML = arModelHtml;
     } else {
-        document.getElementById('arModelDisplay').innerHTML = 'Please select both a frame color and a bar type to view the AR model.';
+        arModelDisplay.innerHTML = '<p style="color: red;">Please select a frame color, handlebar type, and saddle color to view the AR model.</p>';
     }
+
 }
