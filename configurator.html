@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onlyvelo</title>
+    <title>OnlyVelo Configurator</title>
     <link rel="stylesheet" href="css/configurator-styles.css">
 </head>
 <body>
-<p><a href="homescreen.html">Home</a></p>
-    <div class="container">
-        <h1>Configure your OnlyVelo</h1>
-        <form id="configForm">
+    <!-- <div class="container"> -->
+        <img src="assets/images/onlyvelo-logo.png" alt="OnlyVelo Logo" class="logo">
+
             <div class="option-group">
                 <h2>Frame Color</h2>
                 <label><input type="checkbox" name="frame" value="blue"><span class="color-box blue"></span> Blue</label>
@@ -28,10 +27,11 @@
                 <label><input type="checkbox" name="saddle" value="brown"><span class="color-box brown"></span> Brown</label>
 
             </div>
+            <button onclick = "window.location.href = 'homescreen.html';">Home</button>
             <button type="button" onclick="configureBike()">Configure</button>
-        </form>
-    </div>
-    <script src="configurator.js"></script>
-    <div id="arModelDisplay" style="margin-top: 20px;"></div>
+        
+        <div id="arModelDisplay" style="margin-top: 20px;"></div>
+    <!-- </div> -->
+    <script src="js/configurator.js"></script>
 </body>
 </html>

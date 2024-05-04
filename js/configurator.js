@@ -19,18 +19,21 @@ function configureBike() {
     arModelDisplay.innerHTML = '<p>Configuring your bike...</p>';
 
     if (frame && bar && saddle) {
-        let modelPath = `/assets/velos/${frame}-${bar}-${saddle}.usdz`;
+        let modelPath = `../assets/velos/${frame}-${bar}-${saddle}.usdz`;
         let arModelHtml = `
                 <a rel="ar" href="${modelPath}">
                     <button>View rad velo</button>
                 </a>
-                <a href="/test-ride/test-ride.html">
+                <a href="../test-ride/test-ride.html">
                     <button>Test ride</button>
                 </a>
             `;
         arModelDisplay.innerHTML = arModelHtml;
     } else {
-        arModelDisplay.innerHTML = '<p style="color: red;">Please select a frame color, handlebar type, and saddle color to view the AR model.</p>';
+        showAlert();
     }
+    function showAlert() {
+        alert('Please select a frame color, handlebar type, and saddle color to view the AR model');
+      }
 
 }
