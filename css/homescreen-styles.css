@@ -1,4 +1,30 @@
 body {
+    text-align: center;
     font-family: Arial, sans-serif;
-    background-color: #DDDBCB
+    background-color: #344E41;
+    color: #DAD7CD;
+}
+
+.logo {
+    width: 80%;
+    height: auto;
+}
+
+h1 {
+    font-size: 6vh;
+    color: #DAD7CD
+}
+
+button {
+    background-color: #A3B18A;
+    color: #344E41;
+    padding: 10px 20px;
+    border: 1px solid #DAD7CD;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #DAD7CD;
 }

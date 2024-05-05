@@ -1,4 +1,3 @@
-// configurator.js
 document.querySelectorAll('.option-group').forEach(group => {
     group.addEventListener('click', function (event) {
         if (event.target.type === 'checkbox') {
@@ -14,21 +13,18 @@ function configureBike() {
     let frame = document.querySelector('input[name="frame"]:checked')?.value;
     let bar = document.querySelector('input[name="bar"]:checked')?.value;
     let saddle = document.querySelector('input[name="saddle"]:checked')?.value;
-
     let arModelDisplay = document.getElementById('arModelDisplay');
-    arModelDisplay.innerHTML = '<p>Configuring your bike...</p>';
 
     if (frame && bar && saddle) {
         let modelPath = `../assets/velos/${frame}-${bar}-${saddle}.usdz`;
-        let arModelHtml = `
+        arModelDisplay.innerHTML = `
                 <a rel="ar" href="${modelPath}">
-                    <button>View rad velo</button>
+                    <button>View Velo</button>
                 </a>
                 <a href="../test-ride/test-ride.html">
                     <button>Test ride</button>
                 </a>
             `;
-        arModelDisplay.innerHTML = arModelHtml;
     } else {
         showAlert();
     }
