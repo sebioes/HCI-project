@@ -45,7 +45,7 @@
     width:28px;
     position:relative;
     left:570px;
-    top:173px;
+    top:188px;
     display:none;
 }
 
@@ -76,7 +76,7 @@
 }
 .text{
   
-    color:chartreuse;
+    color: #DAD7CD;
     cursor: pointer;
 }
 #cloud{
@@ -101,7 +101,6 @@
     position:absolute;
     height: 15px;
     width: 600px;
-    background-color: green;
     bottom: 0px;
 }
 .hide{
