@@ -27,11 +27,13 @@ h1 {
 h2 {
     font-size: 1.5em;
     color: #DAD7CD;
+    margin-top: 2px;
 }
 
 .option-group {
-    margin-bottom: 5px;
-    padding: 5px;
+    margin-bottom: 8px;
+    padding-top: 5px;
+    padding-bottom: 8px;
     background-color: #3A5A40;
     border: 1px solid #DAD7CD;
     border-radius: 4px;
@@ -90,4 +92,8 @@ button:hover {
 .logo {
     width: 80%;
     height: auto;
+}
+
+.button-group {
+    margin-top: 20px;
 }
